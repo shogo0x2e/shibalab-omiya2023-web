@@ -14,15 +14,8 @@ import Image from 'next/image';
 const HeroSection = () => {
   return (
     <section 
-      className="relative"
-      style={{
-        height: 'calc(100vh - 64px)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
+      className="relative flex flex-col justify-center items-center h-screen"
     >
-
       <div className="absolute inset-0">
         <Image 
           src="/images/led-cube.png" 
@@ -35,31 +28,31 @@ const HeroSection = () => {
           }}
         />
       </div>
-      <div className="flex justify-center items-center">
-        <div className="text-center relative z-10">
-          <div className="p-20 mx-auto">
-            <Image 
-              src="/icons/logo-shibalab.svg" 
-              alt="ShibaLab Logo" 
-              width={200} 
-              height={200}
-            />
-          </div>
-          <div className="mt-4" style={{ color: 'white' }}>
-            <h2 className="text-3xl font-bold">大宮祭 2023</h2>
-            <p>The Explosion</p>
-            <p>@2308 教室</p>
-          </div>
+      <div className="text-center relative z-10">
+        <div className="p-20 mx-auto">
+          <Image 
+            src="/icons/logo-shibalab.svg" 
+            alt="ShibaLab Logo" 
+            width={200} 
+            height={200}
+          />
+        </div>
+        <div className="mt-4" style={{ color: 'white' }}>
+          <h2 className="text-3xl font-bold">大宮祭 2023</h2>
+          <p>The Explosion</p>
+          <p>@2308 教室</p>
         </div>
       </div>
-      <Image 
-        className='flex justify-center items-center' 
-        src="/icons/arrow-double.svg"
-        alt="You can scroll down"
-        width={200} 
-        height={200}
-      />
+      <div className="flex justify-center items-center mt-4">
+        <Image 
+          src="/icons/arrow-double.svg"
+          alt="You can scroll down"
+          width={200} 
+          height={200}
+        />
+      </div>
     </section>
+
   );
 };
 
