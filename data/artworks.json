@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "作品のタイトル1",
+    "description": "説明文1",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 2,
+    "title": "作品のタイトル2",
+    "description": "説明文2",
+    "image": "/images/led-cube.png"
+  }
+]
