@@ -13,22 +13,52 @@ import Image from 'next/image';
 
 const PlayGround = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="text-center">
+    <section>
+      <div 
+        className="relative flex flex-col items-center justify-center"
+        style={{
+          height: 'calc(100vh - 64px)'
+        }}
+      >
         <Image
-          src="/icons/logo-shibalab.svg"
-          alt="ShibaLab Logo"
-          width={200}
-          height={200}
-          className="mx-auto"
+          src="/images/led-cube.png"
+          alt="Background"
+          fill={true}
+          className="absolute inset-0 opacity-50"
+          style={{
+            opacity: 0.5,
+            objectFit: 'cover',
+            objectPosition: 'center'
+          }}
         />
-        <div className="mt-4" style={{ color: 'white' }}>
-          <h2 className="text-3xl font-bold">大宮祭 2023</h2>
-          <p>The Explosion</p>
-          <p>@2308 教室</p>
+        <div className="text-center relative z-10">
+          <div className="p-20 mx-auto">
+            <Image
+              src="/icons/logo-shibalab.svg"
+              alt="ShibaLab Logo"
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="mt-4 text-white">
+            <h2 className="text-3xl font-bold">大宮祭 2023</h2>
+            <p>The Explosion</p>
+            <p>@2308 教室</p>
+          </div>
         </div>
       </div>
-    </div>
+        <div className="flex justify-center items-center mt-4 z-10">
+          <Image
+            src="/icons/arrow-double.svg"
+            alt="You can scroll down"
+            width={200}
+            height={200}
+          />
+        </div>
+      <div>
+
+      </div>
+    </section>
   );
 };
 
