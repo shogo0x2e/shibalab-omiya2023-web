@@ -15,44 +15,44 @@ const HeroSection = () => {
   
   return (
     <section 
-      className="relative"
+      className="relative flex justify-center items-center h-screen"
       style={{
         height: 'calc(100vh - 64px)'
       }}
     >
-
       <div className="absolute inset-0">
         <Image 
           src="/images/led-cube.png" 
           alt="Background" 
           fill={true}
           style={{
-            opacity: '0.5',
-            objectFit: 'cover',
-            objectPosition: 'center'
+            opacity: 0.5
           }}
         />
       </div>
 
-      <div className="flex justify-center items-center">
-        <div className="text-center">
+      <div className="text-center">
+        <div className="inline-block">
           <Image 
             src="/icons/logo-shibalab.svg" 
             alt="ShibaLab Logo" 
             width={200} 
             height={200}
-            style= {{ 
+            className="mx-auto"
+            style={{ 
               position: 'relative', 
-              top: '100px',
-              left: '0',
+              top: '-100px',
               zIndex: 1 
             }}
           />
         </div>
+        <div className="my-4">
+          <h2 className="text-3xl font-bold">大宮祭 2023</h2>
+          <p>The Explosion</p>
+          <p>@2308 教室</p>
+        </div>
       </div>
-      
     </section>
-
   );
 //   <section className="flex justify-center items-center h-screen bg-cover bg-center">
 //   <div className="text-center">
