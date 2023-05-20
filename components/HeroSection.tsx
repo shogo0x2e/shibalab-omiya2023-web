@@ -41,11 +41,11 @@ const HeroSection = () => {
         </div>
         <div className="mt-4 text-white">
           <h2 className="text-3xl font-bold">大宮祭 2023</h2>
-          <p>The Explosion</p>
+          <p className='mt-4'>Emergence in reality.</p>
           <p>@2308 教室</p>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-4 z-10">
+      <div className="flex justify-center items-center mt-10 z-10">
         <Image
           src="/icons/arrow-double.svg"
           alt="You can scroll down"
