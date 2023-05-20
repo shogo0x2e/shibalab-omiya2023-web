@@ -38,11 +38,11 @@ const Artworks = () => {
             <h3 className="text-xl font-bold mb-2">
               {artwork.title}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-400 mb-4">
               {artwork.description}
             </p>
             <div className="flex justify-center">
-              <button className="bg-transparent border border-white text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#101010] transition-colors duration-300">マップで見る</button>
+              <button className="bg-transparent border border-white text-white my-2 py-2 px-4 rounded-full hover:bg-white hover:text-[#101010] transition-colors duration-300">マップで見る</button>
             </div>
 
           </div>

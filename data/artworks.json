@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "作品のタイトル1",
-    "description": "説明文1",
+    "title": "LED CUBE - V3",
+    "description": "手の動きに反応して光の動きも変化するインタラクティブアート。手を握ったり開いたりすることで変化し、様々な光の動きが視覚楽しませます。",
     "image": "/images/led-cube.png"
   },
   {
