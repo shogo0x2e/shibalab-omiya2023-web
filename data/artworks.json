@@ -7,8 +7,62 @@
   },
   {
     "id": 2,
-    "title": "作品のタイトル2",
-    "description": "説明文2",
+    "title": "Webだけで自分の花をつくる",
+    "description": "スマートフォンであなたの名前と好きな色を入力。自分だけの花を咲かせることができます。咲かせた花は後からあなたのスマートフォンでも咲かせることができます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 3,
+    "title": "オーディオリアクティブペーパー",
+    "description": "あなたの好みの色と音楽に合わせて紙が踊ります。彩りと軽快な動きをお楽しみください。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 4,
+    "title": "階段",
+    "description": "あなたのいる階段の段数に合わせて音階を響かせることができます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 5,
+    "title": "パラブレラ",
+    "description": "傘の動きと内部の動きを同期させることで、暗闇の中で傘を持ち歩いたり傘を傾けたりすると、現実世界と仮想現実を組み合わせたMR体験ができる参加型アート。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 6,
+    "title": "階段",
+    "description": "あなたのいる階段の段数に合わせて音階を響かせることができます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 7,
+    "title": "花火ホログラム",
+    "description": "ホログラムで花火を作成。真正面からの花火や手の上で開く花火など普段はできない花火の楽しみ方をすることができます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 8,
+    "title": "Cat and Seek",
+    "description": "動き回るネコをプロジェクションマッピング上に表現。部屋の中にいるネコを探し出して一緒に遊ぶことができます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 9,
+    "title": "AR 体験",
+    "description": "専用のiPadを用いて、全4作品のAR体験ができます。どんな作品かはやってみてのお楽しみです。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 10,
+    "title": "F.L.O.W.er",
+    "description": "センサーが手の動きに反応して花びらの映像が映し出されます。",
+    "image": "/images/led-cube.png"
+  },
+  {
+    "id": 11,
+    "title": "ダンシングフラワー",
+    "description": "ホログラムで花を映し出すデジタルアート。花はジョウロで水をあげる度に元気に踊り出す。",
     "image": "/images/led-cube.png"
   }
 ]

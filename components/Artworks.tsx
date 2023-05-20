@@ -25,6 +25,9 @@ const Artworks = () => {
         <div 
           key={artwork.id} 
           className="max-w-md mx-4 my-4 bg-[#101010] rounded-lg shadow-lg"
+          style={{
+            width: '400px'
+          }}
         >
           <Image 
             src={artwork.image} 
