@@ -14,9 +14,6 @@ const OverView = () => {
   return (
     <section 
       className="text-center"
-      style={{
-        color: 'white'
-      }}
     >
       <h3 className="my-10 text-2xl font-bold">
         OVERVIEW

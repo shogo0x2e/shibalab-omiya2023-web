@@ -1,6 +1,7 @@
 import HeroSection from '@/components/HeroSection'
 import Header from '../components/Header'
 import OverView from '@/components/OverView'
+import FloorMap from '@/components/FloorMap'
 
 
 export default function Home() {
@@ -12,18 +13,18 @@ export default function Home() {
       <div style={{
         height: '180px'
       }} />
-      
+
       <div className='flex justify-center flex-col items-center'>
         <div className='w-9/12'>
           <OverView />
         </div>
 
         <div style={{
-          height: '180px'
+          height: '120px'
         }} />
 
         <div className='w-9/12'>
-          <OverView />
+          <FloorMap />
         </div>
       </div>
     </main>
