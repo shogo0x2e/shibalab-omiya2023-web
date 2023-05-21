@@ -61,7 +61,7 @@ const Footer = () => {
             alt="YouTube" 
             width={36} 
             height={36} 
-            className="mx-6" 
+            className="mx-6 mr-6" 
           />
         </a>
       </div>

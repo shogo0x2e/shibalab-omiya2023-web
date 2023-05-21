@@ -41,7 +41,7 @@ const HeroSection = () => {
         </div>
         <div className="mt-4 text-white">
           <h2 className="text-3xl font-bold">大宮祭 2023</h2>
-          <p className='mt-4'>Emergence in reality.</p>
+          <p className='mt-4'>Escape from Reality.</p>
           <p>@2308 教室</p>
         </div>
       </div>
