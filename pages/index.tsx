@@ -4,11 +4,18 @@ import OverView from '@/components/OverView'
 import FloorMap from '@/components/FloorMap'
 import Artworks from '@/components/Artworks'
 import Footer from '@/components/Footer'
+import Head from 'next/head'
 
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <Head>
+        <meta property="og:title" content="ShibaLab 大宮祭 2023 展示企画" />
+        <meta property="og:description" content="芝浦工業大学のデジタルアートサークル、ShibaLab がお送りする大宮祭 2023 の教室企画です！" />
+        <meta property="og:image" content="/images/meta-preview.png" />
+        <meta property="og:url" content="https://omiyafes-2023.shibalab.com/" />
+      </Head> <main>
       {/* <Header /> */}
       <HeroSection />
       
@@ -43,5 +50,7 @@ export default function Home() {
       </div>
       <Footer />
     </main>
+    </>
+   
   )
 }
