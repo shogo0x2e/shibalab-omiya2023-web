@@ -9,10 +9,21 @@
     I would be happy to notify me if you use part of my code.
 */
 
+import { useState } from 'react';
 import artworksData from '../data/artworks.json';
 import Image from 'next/image';
 
 const Artworks = () => {
+  
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <section>
@@ -44,14 +55,46 @@ const Artworks = () => {
             <p className="text-gray-400 mb-4">
               {artwork.description}
             </p>
-            <div className="flex justify-center">
-              <button className="bg-transparent border border-white text-white my-2 py-2 px-4 rounded-full hover:bg-white hover:text-[#101010] transition-colors duration-300">マップで見る</button>
-            </div>
+            {/* <div className="flex justify-center">
+              <button 
+                onClick={openModal}
+                className="bg-transparent border border-white text-white my-2 py-2 px-4 rounded-full hover:bg-white hover:text-[#101010] transition-colors duration-300">マップで見る</button>
+            </div> */}
 
           </div>
         </div>
       ))}
     </div>
+{/* 
+    {showModal && (
+      <div className="modal">
+        
+        <div
+          style={{
+            position: 'absolute',
+            top: '10px',
+            right: '10px'
+          }}
+        >
+        <Image 
+          src="/icons/util-close.svg" 
+          alt="Humbuger Menu" 
+          width={24} 
+          height={24}
+        />
+
+        </div>
+
+        <Image 
+          src="/images/map-omiyafes2023.png" 
+          alt='Map for Omiya-Fes' 
+          width={400}
+          height={400}
+          onClick={closeModal}
+        />
+
+      </div>
+    )} */}
 
     </section>
 
