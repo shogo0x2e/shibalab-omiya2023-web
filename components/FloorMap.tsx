@@ -20,12 +20,12 @@ const FloorMap = () => {
         MAP
       </h3>
 
-      <div>
+      <div className='flex justify-center items-center'>
         <Image 
           src="/images/map-omiyafes2023.png" 
           alt='Map for Omiya-Fes' 
           width={800}
-          height={600}
+          height={800}
         />
       </div>
 
