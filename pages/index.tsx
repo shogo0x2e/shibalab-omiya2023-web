@@ -4,40 +4,10 @@ import FloorMap from '@/components/FloorMap'
 import Artworks from '@/components/Artworks'
 import Footer from '@/components/Footer'
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
-
-const options = [
-  '/movies/bubble-center.mp4', 
-  '/movies/bubble-float.mp4', 
-  '/movies/petal.mp4', 
-  '/movies/star.mp4', 
-  '/movies/twirl-down.mp4', 
-];
-
-function getRandomVideo() {
-  const randomIndex = Math.floor(Math.random() * options.length);
-  return options[randomIndex];
-}
 
 
 export default function Home() {
-  
-  const [randomVideo, setRandomVideo] = useState('');
-  const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const video = getRandomVideo();
-    setRandomVideo(video);
-
-    setIsVisible(true);
-
-    const timeout = setTimeout(() => {
-      setIsVisible(false);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-
-  }, []); // Only depends on the new state
 
   return (
     <>
@@ -51,24 +21,6 @@ export default function Home() {
         <meta property="og:url" content="https://omiyafes-2023.shibalab.com/" />
         <meta http-equiv="Cache-Control" content="no-store" />
       </Head> 
-      <div
-      style={{
-        width: '100%',
-        height: '100vh',
-        overflow: 'hidden',
-        display: isVisible ? 'block' : 'none' 
-      }}
-      >
-        
-        <video 
-          autoPlay muted loop playsInline
-          className="h-screen video-element"
-          style={{
-            zIndex: 100,
-          }}
-          src={randomVideo}
-        />
-      </div>
 
       <main>
     
