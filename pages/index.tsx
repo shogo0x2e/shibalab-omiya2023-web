@@ -1,11 +1,10 @@
 import HeroSection from '@/components/HeroSection'
-import Header from '../components/Header'
 import OverView from '@/components/OverView'
 import FloorMap from '@/components/FloorMap'
 import Artworks from '@/components/Artworks'
 import Footer from '@/components/Footer'
 import Head from 'next/head'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const options = [
   '/movies/bubble-center.mp4', 
@@ -22,23 +21,23 @@ function getRandomVideo() {
 
 
 export default function Home() {
-
+  
   const [randomVideo, setRandomVideo] = useState('');
-  const timerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const video = getRandomVideo();
     setRandomVideo(video);
 
-    timerRef.current = setTimeout(() => {
-      const element = document.getElementById('target-element');
-      if (element && element.style.display !== 'none') {
-        element.style.display = 'none';
-      }
+    setIsVisible(true);
+
+    const timeout = setTimeout(() => {
+      setIsVisible(false);
     }, 2000);
 
-    return () => clearTimeout(timerRef.current);
-  }, []);
+    return () => clearTimeout(timeout);
+
+  }, []); // Only depends on the new state
 
   return (
     <>
@@ -50,19 +49,23 @@ export default function Home() {
         <meta property="og:description" content="芝浦工業大学のデジタルアートサークル、ShibaLab がお送りする大宮祭 2023 の教室企画です！" />
         <meta property="og:image" content="/images/meta-preview.png" />
         <meta property="og:url" content="https://omiyafes-2023.shibalab.com/" />
+        <meta http-equiv="Cache-Control" content="no-store" />
       </Head> 
-      <div 
-      id='target-element'
+      <div
       style={{
         width: '100%',
         height: '100vh',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        display: isVisible ? 'block' : 'none' 
       }}
       >
         
         <video 
           autoPlay muted loop playsInline
           className="h-screen video-element"
+          style={{
+            zIndex: 100,
+          }}
           src={randomVideo}
         />
       </div>

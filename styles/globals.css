@@ -42,6 +42,24 @@ body {
   }
 }
 
+.bg-video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 100vh;
+  z-index: -100;
+  overflow: hidden;
+  object-fit: cover;
+  filter: brightness(0.2);
+}
+
+/* ----- 背景の上に表示させたいコンテンツ ----- */
+.header-title{
+  position: relative; /*必ず必要*/
+  z-index: 2; /*必ず必要*/
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

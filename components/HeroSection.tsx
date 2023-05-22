@@ -14,7 +14,7 @@ import Image from 'next/image';
 const HeroSection = () => {
   return (
     <section 
-      className="relative flex flex-col items-center justify-center h-screen"
+      className="relative flex flex-col items-center justify-center h-screen bg-black"
       style={{
         height: 'calc(100vh - 64px)'
       }}
