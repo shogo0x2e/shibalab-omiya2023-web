@@ -20,7 +20,7 @@ const HeroSection = () => {
       }}
     >
       <Image
-        src="/images/led-cube.png"
+        src="/images/flower-for-hero.png"
         alt="Background"
         fill={true}
         className="absolute inset-0 opacity-50"
