@@ -43,6 +43,9 @@ const HeroSection = () => {
           <h2 className="text-3xl font-bold">大宮祭 2023</h2>
           <p className='mt-4'>Escape from Reality.</p>
           <p>@2308 教室</p>
+          <p className='bold mt-10'>
+            2023 年度の大宮祭は終了しました。<br></br>たくさんのご来場ありがとうございました。
+          </p>
         </div>
       </div>
       <div className="flex justify-center items-center mt-10 z-10">
