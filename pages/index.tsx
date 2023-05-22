@@ -20,6 +20,7 @@ export default function Home() {
         <meta property="og:image" content="/images/meta-preview.png" />
         <meta property="og:url" content="https://omiyafes-2023.shibalab.com/" />
         <meta http-equiv="Cache-Control" content="no-store" />
+        <title> 2023 大宮祭特設サイト | ShibaLab </title>
       </Head> 
 
       <main>
