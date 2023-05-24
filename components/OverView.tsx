@@ -45,9 +45,12 @@ const OverView = () => {
         OVERVIEW
       </h3>
 
-      <video className="bg-video bg-black" src={randomVideo} autoPlay loop muted playsInline>
+      <div className="bg-video-wrapper flex justify-center items-center">
+        <video className="bg-video bg-black" src={randomVideo} autoPlay loop muted playsInline>
 
-      </video>
+        </video>
+
+      </div>
 
       {/* 画面上のコンテンツ */}
       <div className="header-title">
